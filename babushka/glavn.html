@@ -23,7 +23,7 @@
             <ul>
                 <li><a href="#" class="search"><i class="fa fa-search"></i> Поиск</a></li>
                 <li><a href="#" class="register"><i class="fa fa-user-plus"></i> Регистрация</a></li>
-                <li><a href="#" class="profile"><i class="fa fa-user"></i> Личный кабинет</a></li>
+                <li><a href="login.html" class="profile"><i class="fa fa-user"></i> Личный кабинет</a></li>
                 <li><a href="#" class="add"><i class="fa fa-plus-circle"></i> Добавить</a></li>
                 <li><a href="#" class="reviews"><i class="fa fa-comments"></i> Отзывы</a></li>
             </ul>
@@ -91,11 +91,6 @@
         </section>
         <section class="short-search">
             <form>
-                <label for="place">Район</label>
-                <select name="place" id="place">
-                    <option value="0">Правый берег</option>
-                    <option value="1">Левый берег</option>
-                </select>
                 <label for="type-animal">Вид животного</label>
                 <select name="type-animal" id="type-animal">
                     <option value="cat">Кот</option>
@@ -106,9 +101,6 @@
                 </select>
                 <button type="submit">Поиск</button>
             </form>
-            <div class="search-iteam">
-                <img src="images/img/8055.jpg" alt="dog">
-            </div>
         </section>
         <section class="facts">
             <div class="container">
@@ -129,114 +121,171 @@
                 </ul>
             </div>
         </section>
-    </main>
-    <h1 style="text-align: center; font-size: 36px;">Отзывы</h1>
-    <section class="reviews">
-        <div class="container">
-            <div class="swiper reviewsSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-author">
-                                <img src="images/img/back-1.jpg" alt="Автор отзыва" class="author-avatar">
-                                <h4>Анна Петрова</h4>
-                            </div>
-                            <div class="review-pet">
-                                <img src="images/img/negr.jpg" alt="Найденный питомец">
-                            </div>
-                            <p class="review-text">Благодаря этому сайту я нашла своего потерявшегося кота Мурзика! Спасибо большое за помощь!</p>
-                            <div class="review-date">15 марта 2024</div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-author">
-                                <img src="images/img/8055.jpg" alt="Автор отзыва" class="author-avatar">
-                                <h4>Игорь Сидоров</h4>
-                            </div>
-                            <div class="review-pet">
-                                <img src="images/img/negr.jpg" alt="Найденный питомец">
-                            </div>
-                            <p class="review-text">Отличный сервис! Помогли найти хозяина для бездомного щенка. Теперь он в надежных руках.</p>
-                            <div class="review-date">10 марта 2024</div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-author">
-                                <img src="images/img/back-2.jpg" alt="Автор отзыва" class="author-avatar">
-                                <h4>Мария Иванова</h4>
-                            </div>
-                            <div class="review-pet">
-                                <img src="images/img/8055.jpg" alt="Найденный питомец">
-                            </div>
-                            <p class="review-text">Потеряла кролика в парке, но благодаря сайту нашла его через два дня! Огромное спасибо!</p>
-                            <div class="review-date">5 марта 2024</div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-author">
-                                <img src="images/img/8055.jpg" alt="Автор отзыва" class="author-avatar">
-                                <h4>Дмитрий Волков</h4>
-                            </div>
-                            <div class="review-pet">
-                                <img src="images/img/back-2.jpg" alt="Найденный питомец">
-                            </div>
-                            <p class="review-text">Улетел попугай с балкона, думал не найду. Разместил объявление и через день его нашли!</p>
-                            <div class="review-date">1 марта 2024</div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-author">
-                                <img src="images/img/8055.jpg" alt="Автор отзыва" class="author-avatar">
-                                <h4>Елена Соколова</h4>
-                            </div>
-                            <div class="review-pet">
-                                <img src="images/img/negr.jpg" alt="Найденный питомец">
-                            </div>
-                            <p class="review-text">Нашла потерянную кошку во дворе. Через сайт быстро отыскались хозяева. Они были так рады!</p>
-                            <div class="review-date">25 февраля 2024</div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-card">
-                            <div class="review-author">
-                                <img src="images/img/8055.jpg" alt="Автор отзыва" class="author-avatar">
-                                <h4>Сергей Морозов</h4>
-                            </div>
-                            <div class="review-pet">
-                                <img src="images/img/back-2.jpg" alt="Найденный питомец">
-                            </div>
-                            <p class="review-text">Спасибо сайту за помощь! Собака потерялась во время прогулки, но нашлась в тот же день.</p>
-                            <div class="review-date">20 февраля 2024</div>
-                        </div>
-                    </div>
+        <section class="search">
+            <div class="container">
+                <div class="search-item">
+                    <form>
+                        <label for="place">Район</label>
+                        <select name="place" id="place">
+                            <option value="0">Правый берег</option>
+                            <option value="1">Левый берег</option>
+                        </select>
+                        <label for="animal">Вид животного</label>
+                        <select name="animal" id="animal">
+                        <option value="cat">Кот</option>
+                        <option value="dog">Собака</option>
+                        <option value="rabbit">Кролик</option>
+                        <option value="hamster">Хомяк</option>
+                        <option value="parrot">Попугай</option>
+                    </select>
+                        <button type="submit">Поиск</button>
+                    </form>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="search-item">
+                    <img src="images/img/negr.jpg">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2>Отзывы</h2>
+                <div class="swiper reviews-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="images/img/avatar.jpg" alt="Фото автора" class="author-avatar">
+                                <div class="review-info">
+                                    <h3 class="author-name">Анна Петрова</h3>
+                                    <span class="review-date">15 марта 2024</span>
+                                </div>
+                            </div>
+                            <div class="review-pet">
+                                <img src="images/img/pet-photo.jpeg" alt="Фото питомца" class="pet-photo">
+                            </div>
+                            <p class="review-text">
+                                Благодаря этому сайту я нашла своего потерянного Негра Ovuvuevuevue Enyetuenwuevue Ugbemugbem Osas! 
+                                Спасибо большое за помощь и поддержку. Сервис работает отлично, 
+                                откликнулось много неравнодушных людей.
+                            </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="images/img/avatar.jpg" alt="Фото автора" class="author-avatar">
+                                <div class="review-info">
+                                    <h3 class="author-name">Анна Петрова</h3>
+                                    <span class="review-date">15 марта 2024</span>
+                                </div>
+                            </div>
+                            <div class="review-pet">
+                                <img src="images/img/pet-photo.jpeg" alt="Фото питомца" class="pet-photo">
+                            </div>
+                            <p class="review-text">
+                                Благодаря этому сайту я нашла своего потерянного Негра Ovuvuevuevue Enyetuenwuevue Ugbemugbem Osas! 
+                                Спасибо большое за помощь и поддержку. Сервис работает отлично, 
+                                откликнулось много неравнодушных людей.
+                            </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="images/img/avatar.jpg" alt="Фото автора" class="author-avatar">
+                                <div class="review-info">
+                                    <h3 class="author-name">Анна Петрова</h3>
+                                    <span class="review-date">15 марта 2024</span>
+                                </div>
+                            </div>
+                            <div class="review-pet">
+                                <img src="images/img/pet-photo.jpeg" alt="Фото питомца" class="pet-photo">
+                            </div>
+                            <p class="review-text">
+                                Благодаря этому сайту я нашла своего потерянного Негра Ovuvuevuevue Enyetuenwuevue Ugbemugbem Osas! 
+                                Спасибо большое за помощь и поддержку. Сервис работает отлично, 
+                                откликнулось много неравнодушных людей.
+                            </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="images/img/avatar.jpg" alt="Фото автора" class="author-avatar">
+                                <div class="review-info">
+                                    <h3 class="author-name">Анна Петрова</h3>
+                                    <span class="review-date">15 марта 2024</span>
+                                </div>
+                            </div>
+                            <div class="review-pet">
+                                <img src="images/img/pet-photo.jpeg" alt="Фото питомца" class="pet-photo">
+                            </div>
+                            <p class="review-text">
+                                Благодаря этому сайту я нашла своего потерянного Негра Ovuvuevuevue Enyetuenwuevue Ugbemugbem Osas! 
+                                Спасибо большое за помощь и поддержку. Сервис работает отлично, 
+                                откликнулось много неравнодушных людей.
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+        </section>
+        <section class="sub">
+            <div class="container">
+                <form>
+                    <label for="email">Почта</label>
+                    <input type="email" name="email" id="email" placeholder="example@mail.ru">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">Согласие на обработку данных</label>
+                    </div>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </section>
+        <!--Подвал сайта--> 
+        <footer class="footer"> 
+            <div class="container"> 
+                <div class="footer-item"> 
+                    <a class="tel" href="tel:8800553555">8 800 555 35 55</a> 
+                    <a class="mail" href="mailto:mail@newlife.ru">mailto:mail@newlife.ru</a> 
+                </div> 
+                <div class="footer-item"> 
+                    <ul> 
+                        <li><a href="glavn.html">Главная</a></li>
+                        <li><a href="glavn.html">Регистрация</a></li> 
+                        <li><a href="glavn.html">Авторизация</a></li> 
+                        <li><a href="glavn.html">Личный кабинет</a></li> 
+                        <li><a href="glavn.html">Найдено животное</a></li>
+                        <li><a href="glavn.html">Поиск</a></li>    
+                    </ul> 
+                </div> 
+                </div> 
+             
+        </footer>
+    </main>
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      
-    
-    var reviewsSwiper = new Swiper(".reviewsSwiper", {
+    var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+      },
+    });
+    var reviewsSwiper = new Swiper(".reviews-swiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   </script>
